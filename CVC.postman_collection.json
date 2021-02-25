@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "b204870d-5df2-4874-8422-9fd12a0ab215",
+		"name": "CVC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "budgetByCity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hotel/budgetByCity?CityCode=1032&Checkin=20/02/2021&Checkout=25/02/2021&Adults=1&Children=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"budgetByCity"
+					],
+					"query": [
+						{
+							"key": "CityCode",
+							"value": "1032"
+						},
+						{
+							"key": "Checkin",
+							"value": "20/02/2021"
+						},
+						{
+							"key": "Checkout",
+							"value": "25/02/2021"
+						},
+						{
+							"key": "Adults",
+							"value": "1"
+						},
+						{
+							"key": "Children",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "budgetByHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hotel/budgetByHotel?HotelID=1&Checkin=20/02/2021&Checkout=25/02/2021&Adults=1&Children=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hotel",
+						"budgetByHotel"
+					],
+					"query": [
+						{
+							"key": "HotelID",
+							"value": "1"
+						},
+						{
+							"key": "Checkin",
+							"value": "20/02/2021"
+						},
+						{
+							"key": "Checkout",
+							"value": "25/02/2021"
+						},
+						{
+							"key": "Adults",
+							"value": "1"
+						},
+						{
+							"key": "Children",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
